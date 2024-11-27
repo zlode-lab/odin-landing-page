@@ -1,3 +1,105 @@
-.header {
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
 
+.header, .content-01 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-02  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-boxes-container {
+    display: flex;
+}
+
+.image-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer, .content-03, .content-04 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product-text {
+    color: #E5E7EB;
+}
+
+.header, .content-01, .footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
+.quote-author {
+    font-weight: 900;
+}
+
+.opening-text, a {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+button, .product {
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+button {
+    padding: 50px, 16px;
+    border: none;
+}
+
+h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 36px;
+    color:#1F2937;
+    font-weight: 900;
+}
+
+.content-03 {
+    background-color: #E5E7EB;
+}
+
+.quote-text {
+    font-size: 36px;
+    color:#1F2937;
+    font-style: italic;
+    font-weight: lighter;
 }
