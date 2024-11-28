@@ -3,30 +3,45 @@ body {
     display: flex;
     flex-direction: column;
 }
-/*add content, sort out style.css, its in chaos*/
+
+.header, .content-01, .content-02, .content-03, .content-04, .footer {
+    padding-inline: min(250px, 15vw);
+    min-width: 800px;
+}
+
+.header {
+    padding-top: 20px;
+}
+
 .header, .content-01 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header, .content-01, .content-02, .content-03, .content-04, .footer {
-    padding-inline: min(250px, 15vw);
-    min-width: 800px;
+.header, .content-01, .footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
 }
+
+.logo-text {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .content-01, .content-02 {
     height: min(1000px, 60vh);
     min-height: 400px;
-}
-
-.content-03 {
-    height: min(875px, 52.5vh);
-    min-height: 250px;
-}
-
-.content-04 {
-    height: min(700px, 42vh);
-    min-height: 100px;
 }
 
 .content-01 .left, .content-01 .right {
@@ -47,23 +62,50 @@ body {
     
 }
 
-.header {
-    padding-top: 20px;
+.content-01 h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin-block: 0.1em;
 }
 
-.footer {
-    padding-block: 40px;
+.opening-text, a {
+    font-size: 18px;
 }
 
-.header-links {
-    display: flex;
-    gap: 20px;
+button, .product {
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+.sign-up, .product-sign-up {
+    padding: 8px 28px;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.sign-up {
+    border: none;
+    margin-top: 12px;
 }
 
 .content-02  {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.content-02 h2 {
+    font-size: 36px;
+    color:#1F2937;
+    font-weight: 900;
+    margin-block: 0.1em;
+}
+
+.spacing {
+    display: flex;
+    justify-content: center;
 }
 
 .image-boxes-container {
@@ -100,16 +142,51 @@ body {
     align-items: center;
 }
 
+.content-03 {
+    height: min(875px, 52.5vh);
+    min-height: 280px;
+    background-color: #E5E7EB;
+}
+
 .quote {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
+.quote-text {
+    font-size: 36px;
+    color:#1F2937;
+    font-style: italic;
+    font-weight: 100;
+    margin-inline: 10%;
+}
+
+.quote-author {
+    margin-top: 8px;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.content-04 {
+    height: min(700px, 42vh);
+    min-height: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 .product {
     display: flex;
     align-items: center;
     height: min(100%, 13em);
+    border-radius: 8px;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.product-sign-up {
+    border: 2px solid #F9FAF8;
+    flex: 1;
 }
 
 .product-header {
@@ -122,92 +199,6 @@ body {
     font-size: 18px;
 }
 
-.header, .content-01, .footer {
-    background-color: #1F2937;
-    color: #E5E7EB;
-}
-
-.quote-author {
-    margin-top: 8px;
-    font-weight: 900;
-    font-size: 24px;
-}
-
-.opening-text, a {
-    font-size: 18px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.logo-text {
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.content-04 {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-button, .product {
-    background-color: #3882F6;
-    color: #F9FAF8;
-}
-
-.sign-up, .product-sign-up {
-    padding: 8px 28px;
-    border-radius: 8px;
-    font-weight: 900;
-    font-size: 16px;
-}
-
-.sign-up {
-    border: none;
-    margin-top: 12px;
-}
-
-.product {
-    border-radius: 8px;
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-}
-
-.product-sign-up {
-    border: 2px solid #F9FAF8;
-    flex: 1;
-}
-
-h1 {
-    font-size: 48px;
-    color: #F9FAF8;
-    font-weight: 900;
-    margin-block: 0.1em;
-}
-
-.spacing {
-    display: flex;
-    justify-content: center;
-}
-
-.content-02 h2 {
-    font-size: 36px;
-    color:#1F2937;
-    font-weight: 900;
-    margin-block: 0.1em;
-}
-
-.content-03 {
-    background-color: #E5E7EB;
-}
-
-.quote-text {
-    font-size: 36px;
-    color:#1F2937;
-    font-style: italic;
-    font-weight: 100;
-    margin-inline: 10%;
+.footer {
+    padding-block: 40px;
 }
